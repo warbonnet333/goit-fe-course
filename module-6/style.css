@@ -1,0 +1,60 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  /* забрали крапки з лішок */
+  font-family: "Myriad Pro Regular";
+  /* text-transform: none; */
+}
+a{
+    color: #0f0101;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.product_list {
+}
+.product_item {
+  width: 255px;
+  margin-bottom: 30px;
+  color: white;
+  float: left;
+}
+.product_item:not(:nth-of-type(4n)) {
+  margin-right: 30px;
+}
+.item_name {
+  text-transform: uppercase;
+  display: inline-block;
+  height: 40px;
+  width: 200px;
+  background-color: #323232;
+  padding: 10px;
+  vertical-align: middle;
+  /* padding-left: 10px; */
+  text-align: left;
+}
+.item_img {
+  font-size: 0;
+}
+.item_price {
+  height: 40px;
+  width: 55px;
+  background-color: #8c8c8c;
+  float: right;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
