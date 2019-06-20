@@ -5,12 +5,62 @@
   box-sizing: border-box;
   list-style-type: none;
   /* забрали крапки з лішок */
-  font-family: "Myriad Pro Regular";
+  font-family: "Open Sans", sans-serif;
   /* text-transform: none; */
 }
-a{
-    color: #0f0101;
+a {
+  color: #0f0101;
 }
+
+/* HEADER */
+
+.header {
+  text-transform: uppercase;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+.logo {
+  float: left;
+  font-size: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.logo :first-child { 
+  color: #1abc9c;
+}
+.nav_item {
+  float: right;
+  margin-left: 35px;
+  padding: 8px 0;
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 14px;
+  font-weight: bold ;
+}
+.nav_item:hover {
+  color: #1abc9c;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main_underline {
+  width: 165px;
+  height: 7px;
+  color: #1abc9c;
+  margin: 35px auto 92px;
+  background-color: #1abc9c;
+  border: none;
+  /* padding: 35px 0 92px; */
+}
+/* MAIN */
 
 .container {
   max-width: 1110px;
