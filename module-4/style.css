@@ -28,7 +28,7 @@ a {
   color: #515151;
 }
 
-.logo::first-letter { 
+.logo::first-letter {
   color: #1abc9c;
 }
 .nav_item {
@@ -38,14 +38,14 @@ a {
   font-size: 14px;
   vertical-align: middle;
   line-height: 14px;
-  font-weight: bold ;
+  font-weight: bold;
 }
 .nav_item:hover {
   color: #1abc9c;
 }
 
-
-.first_name,.second_name {
+.first_name,
+.second_name {
   text-align: center;
   font-size: 48px;
   font-weight: bold;
@@ -54,17 +54,18 @@ a {
   color: #515151;
 }
 
-.main_underline {
+.first_name::after {
+  content: "";
+  display: block;
   width: 165px;
   height: 7px;
   color: #1abc9c;
   margin: 35px auto 92px;
   background-color: #1abc9c;
   border: none;
-  /* padding: 35px 0 92px; */
 }
-/* MAIN */
 
+/* MAIN */
 
 .container {
   max-width: 1110px;
@@ -91,7 +92,7 @@ a {
 .product_item:not(:nth-of-type(4n)) {
   margin-right: 30px;
 }
-.product_item:nth-of-type(n+4){
+.product_item:nth-of-type(n + 4) {
   margin-bottom: 0;
 }
 .item_name {
@@ -126,23 +127,19 @@ a {
 
   /* font-size: 18px; */
 }
-.product_item:hover>.item_price {
+.product_item:hover > .item_price {
   background-color: #7fd9c7;
 }
-.product_item:hover>.item_name {
+.product_item:hover > .item_name {
   background-color: #1abc9c;
-
 }
 
-
-
 /* MINI ARTICLES  */
-
-
 
 .container_2 {
   max-width: 1110px;
   margin: 0 auto 0;
+  min-height: 550px;
 }
 .clearfix::after {
   content: "";
@@ -152,7 +149,16 @@ a {
 
 .second_name {
   margin: 105px auto 0;
-
+}
+.second_name::after {
+  content: "";
+  display: block;
+  width: 165px;
+  height: 7px;
+  color: #1abc9c;
+  margin: 35px auto 92px;
+  background-color: #1abc9c;
+  border: none;
 }
 .mini_li {
   max-width: 350px;
@@ -168,17 +174,21 @@ a {
   margin-right: 30px;
 }
 
-
 .mini_name {
-  padding: 8px 0 14px;
+  padding: 8px 0 0;
 }
-
-.mini_underline {
+.mini_name::after{
+  content: "";
+  display: block;
   width: 135px;
   height: 4px;
   border: none;
-  background-color: #1abc9c;  
+  background-color: #1abc9c;
+  /* margin-right: auto;   */
+  margin: 15px auto 0 0 ;
 }
+
+
 .mini_text {
   font-size: 14px;
   padding: 27px 0 20px;
@@ -194,6 +204,3 @@ a {
   border-radius: 3px;
   text-transform: capitalize;
 }
-
- 
-
