@@ -18,22 +18,23 @@ a {
   text-transform: uppercase;
   max-width: 1110px;
   margin: 0 auto;
-  padding: 45px 0 100px;
+  padding: 45px 0 90px;
 }
 .logo {
   float: left;
   font-size: 30px;
   margin: 0 auto;
-  line-height: 30px;
-  color: #515151;
+  height: 44px;
+ 
+}
+.navigation {
+  height: 44px;
 }
 
-.logo::first-letter {
-  color: #1abc9c;
-}
+
 .nav_item {
   float: right;
-  margin-left: 35px;
+  margin: 7px 0 0 35px;
   padding: 8px 0;
   font-size: 14px;
   vertical-align: middle;
@@ -98,16 +99,20 @@ a {
 .item_name {
   text-transform: uppercase;
   display: inline-block;
-  height: 40px;
+  /* height: 40px;
+  padding: 10px;
+  line-height: 18px; */
   width: 200px;
   background-color: #323232;
-  padding: 10px;
   vertical-align: middle;
   /* padding-left: 10px; */
   text-align: left;
   font-size: 18px;
-  line-height: 18px;
   font-weight: bold;
+  --h: 40px;
+  height: var(--h);
+  line-height: var(--h);
+  padding-left: 13px;
 }
 .item_img {
   font-size: 0;
@@ -177,7 +182,7 @@ a {
 .mini_name {
   padding: 8px 0 0;
 }
-.mini_name::after{
+.mini_name::after {
   content: "";
   display: block;
   width: 135px;
@@ -185,9 +190,8 @@ a {
   border: none;
   background-color: #1abc9c;
   /* margin-right: auto;   */
-  margin: 15px auto 0 0 ;
+  margin: 15px auto 0 0;
 }
-
 
 .mini_text {
   font-size: 14px;
