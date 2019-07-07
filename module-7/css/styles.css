@@ -34,6 +34,7 @@
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bolder;
+  transition: color 0.2s linear;
 }
 .nav_item:hover {
   color: #fed136;
@@ -94,5 +95,86 @@
     font-family: 'Roboto Slab';
     font-size: 14px;
     color: #777777;
+}
+
+/* SECOND part */
+
+.title_2{
+  padding-top: 95px;
+  color: #ffffff;
+}
+
+.dark{
+  background: #222222;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-image: url(../img/Map.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%; 
+  background-position-y: 100%; 
+}
+.form{
+  margin: 60px 0 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.left_inps{
+  padding: 0;
+  display: inline-block;
+  width: 455px;
+  margin-right: 30px;
+
+}
+.small_inp{
+  height: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.mess_text{
+  width: 455px;
+  height: 210px;
+}
+.small_inp, .mess_text{
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  color: rgb(187, 187, 187);
+
+  padding: 20px; 
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sub_btn{
+  width: 240px;
+  height: 60px;
+  color: #ffffff;
+  border: none;
+  background-color: #fed136;
+  margin: 0 auto 115px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input:focus:valid {
+  outline: 2px solid green;
+}
+
+input:focus:invalid {
+  outline: 2px solid red;
+
+}
+textarea:focus:valid {
+  outline: 2px solid green;
+}
+
+textarea:focus:invalid {
+  outline: 2px solid red;
+
 }
 
