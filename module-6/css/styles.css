@@ -36,18 +36,23 @@ header {
   color: #95e1d3;
   text-decoration: none;
 }
-.nav_item:hover::after {
+.nav_item:after {
   content: "";
   border: none;
   display: block;
   height: 3px;
-  width: 50px;
+  width: 0;
   background-color: #f38181;
   margin: 12px auto 0;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  transition: width 0.4s;  
 }
+.nav_item:hover::after{
+  width: 50px;
+}
+
 .navigation .nav_item:hover a {
   color: #f38181;
 }
@@ -229,6 +234,7 @@ header {
 .sub_menu_item:hover {
   background-color: #95e1d3;
 }
+
 
 
 main::after {
