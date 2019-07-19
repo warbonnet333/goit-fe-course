@@ -5,7 +5,9 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-
+body {
+  padding-bottom: 30px;
+}
 .logo {
   font-size: 20px;
   text-transform: uppercase;
@@ -25,6 +27,17 @@
   background-position-y: 50%;
   color: #ffffff;
 }
+.nav {
+  height: 230px;
+  padding-top: 20px;
+}
+.logo_1 {
+  order: 2;
+}
+.logo_2 {
+  height: 40px;
+  padding-top: 10px;
+}
 .login_btn {
   font-size: 14px;
   font-weight: bold;
@@ -33,6 +46,7 @@
   color: #ffffff;
   height: 40px;
   width: 94px;
+  order: 1;
 }
 .login_btn:hover {
   border: 2px solid rgb(255, 255, 255);
@@ -45,10 +59,10 @@ h1 {
   margin: 0 auto;
   letter-spacing: 2px;
 }
-.head_descr {
+.head_title {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: bold;
   padding: 20px 0;
   width: 60%;
   margin: 0 auto;
@@ -66,8 +80,9 @@ h1 {
 }
 .small_title {
   margin: 70px auto 0;
-  width: 270px;
+  width: 65%;
   color: #333333;
+  font-size: 20px;
 }
 .part_list {
   padding-bottom: 30px;
@@ -136,4 +151,44 @@ h1 {
   height: 40px;
   border-radius: 20px;
   font-size: 14px;
+}
+@media (min-width: 768px) {
+  .header {
+    height: 700px;
+  }
+  .logo_1 {
+    order: 1;
+  }
+  .login_btns {
+    order: 2;
+    padding: 0;
+  }
+  .nav {
+    height: 225px;
+  }
+  .finder_btn {
+    width: 226px;
+  }
+  .head_title {
+    padding: 30px 0 40px;
+  }
+  h1 {
+    font-size: 40px;
+    max-width: 400px;
+  }
+  .container_2 {
+    width: 71%;
+    margin: 0 auto;
+  }
+  .small_title{
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 992px){
+    .part_list_item{
+      max-width: 220px;
+    }
+    .container_2{
+      width: 940px;
+    }
 }
