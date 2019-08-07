@@ -455,7 +455,7 @@ footer input {
 footer .foot__field input[type="text"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-footer .foot__field input[type="text"]::-moz-placeholder {
+footer .foot__field input[type@="text"]::-moz-placeholder {
   color: #cccccc;
 }
 footer .foot__field input[type="text"]:-ms-input-placeholder {
