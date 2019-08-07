@@ -1,0 +1,39 @@
+// fonts
+$main_font: 'Montserrat';
+$small_title_font: 'Kaushan Script';
+$description_italic_font: 'Roroto';
+
+// COLORS
+// HEADER
+$defoult-nav-color: #fcf0ef;
+$hover-nav-color: #fce38a;
+$header-main-color: #ffffff;
+$title-underline-color: #f38181;
+
+// main
+$serv-list-title-color: #333333;
+$serv-list-descr-color: #999999;
+$person-back-color:#95e1d3;
+$def-sub-icon-color: #f38181;
+$hover-sub-icon-color: #ffffff;
+$def-sub-back-color: #fce38a;
+$hover-sub-back-color: #f38181;
+$main-underline-color: #cccccc;
+
+// footer
+$link-color: #f38181;
+$input-color: #cccccc;
+$footer-btn-color: #95e1d3;
+$footer-btn-text-color: #ffffff;
+
+// gradients
+$header-gradient: linear-gradient(
+  to top,
+  rgba(252, 227, 138, 0.9) 0%,
+  rgba(243, 129, 129, 0.9) 100%
+);
+$person-gradient: linear-gradient(
+  to top,
+  rgba(252, 227, 138, 0.9) 0%,
+  rgba(243, 129, 129, 0.9) 100%
+);

@@ -510,6 +510,11 @@ template {
   line-height: 14px;
   text-align: center;
   position: relative;
+  transition: fill .2s ease-in-out;
+}
+
+.nav__item:hover svg {
+  fill: #fce38a;
 }
 
 .nav__item:after {
@@ -517,7 +522,7 @@ template {
   border: none;
   display: block;
   height: 3px;
-  width: 0;
+  width: 0px;
   background-color: #fce38a;
   margin: 12px auto 0;
   position: absolute;
@@ -526,12 +531,17 @@ template {
   transition: width 0.3s ease-in-out;
 }
 
+.nav__item:nth-last-of-type(-n+2):after {
+  margin-top: 7px;
+}
+
 .nav__item:hover::after {
   width: 50px;
 }
 
 .nav__item:hover .nav__link {
   color: #fce38a;
+  fill: #fce38a;
 }
 
 .header__title {
@@ -681,6 +691,15 @@ template {
   height: 580px;
 }
 
+.team__item:hover .team__img {
+  transform: translate(-10px, -10px);
+}
+
+.team__item:hover .front__shadow {
+  opacity: 1;
+  overflow: auto;
+}
+
 .team__list {
   display: flex;
   flex-flow: row wrap;
@@ -706,15 +725,6 @@ template {
   text-transform: capitalize;
   color: #999999;
   text-align: center;
-}
-
-.team__item:hover .team__img {
-  transform: translate(-10px, -10px);
-}
-
-.team__item:hover .front__shadow {
-  opacity: 1;
-  overflow: auto;
 }
 
 .back__shadow {
@@ -849,7 +859,7 @@ footer .foot__field input[type='text']::placeholder {
   background-color: #95e1d3;
   height: 40px;
   width: 150px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
