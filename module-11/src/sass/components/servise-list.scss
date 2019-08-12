@@ -1,0 +1,37 @@
+.serv__list {
+  padding: 65px 0 0 0;
+  @include flex-space;
+  list-style: none;
+}
+
+.serv__item {
+  width: 383px;
+  padding-bottom: 100px;
+}
+
+.serv__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: $serv-list-title-color;
+  font-family: $main_font, sans-serif;
+}
+
+.serv__text {
+  font-family: $description_italic_font, sans-serif;
+  color: $serv-list-descr-color;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.serv__icon {
+  float: left;
+  padding: 0 25px 40px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

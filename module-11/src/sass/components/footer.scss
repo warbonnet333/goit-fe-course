@@ -1,0 +1,43 @@
+footer {
+  height: 62px;
+  @include flex-space($flow: row);
+  align-items: baseline;
+  padding: 11px 0;
+  font-size: 14px;
+  font-family: $main_font, sans-serif;
+}
+
+
+footer span a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+footer input {
+  border: 1px solid $input-color;
+  font-size: 15px;
+  font-family: $description_italic_font, sans-serif;
+  height: 40px;
+  min-width: 230px;
+  padding: 0 0 0 10px;
+  border-right: none;
+}
+
+footer .foot__field input[type='text']::placeholder {
+  color: $input-color;
+}
+
+.foot__btn {
+  font-weight: bold;
+  border: none;
+  background-color: $footer-btn-color;
+  height: 40px;
+  width: 150px;
+  color: $footer-btn-text-color;
+  text-transform: uppercase;
+}
+
+.foot__field {
+  height: 40px;
+  @include flex-space($flow: row, $space: flex-end);
+}

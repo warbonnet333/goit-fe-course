@@ -1,0 +1,16 @@
+// Utils
+
+@import './normalize';
+@import './helpers/typography';
+@import './helpers/variables';
+@import './helpers/placeholders';
+@import './helpers/mixins';
+
+// Components
+
+@import './components/base';
+@import './components/header';
+@import './components/servise-list';
+@import './components/team';
+@import './components/footer';
+@import './components/titles';
